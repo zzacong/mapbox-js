@@ -2,8 +2,7 @@ const MELBOURNE = [144.96, -37.81]
 const NEW_YORK = [-74.0, 40.71]
 const MANCHESTER = [-2.24, 53.48]
 
-mapboxgl.accessToken =
-  'pk.eyJ1IjoienphY29uZyIsImEiOiJja2hjcGQ3bjEwM29jMzVxdHV0a3Z4cHQxIn0.H4HcBqpxmiw_7k-M-1Bbhg'
+mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN
 
 const setUpMap = center => {
   const map = new mapboxgl.Map({
